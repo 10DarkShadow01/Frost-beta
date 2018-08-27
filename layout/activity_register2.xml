@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Register"
+    android:background="@drawable/rsnow">
+    <!--<ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/cllodd"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp" />-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    tools:context=".Register"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:id="@+id/lll"
+    android:layout_marginTop="23dp"
+    android:layout_below="@+id/jj"
+    android:layout_alignParentStart="true">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/username"
+        android:inputType="text"
+        android:maxLines="1"
+        android:hint="Name"
+        android:drawableLeft="@drawable/bpers"
+        android:layout_marginBottom="10dp"/>
+   <!-- <com.hbb20.CountryCodePicker
+        android:id="@+id/ccp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/editText"
+        android:layout_toStartOf="@+id/editText"
+        app:ccp_showFullName="false"
+        app:ccp_showNameCode="false"
+        app:ccp_showPhoneCode="false"
+        app:ccp_contentColor="b"
+        app:ccp_autoDetectCountry="true"
+        app:ccpDialog_searchEditTextTint="@color/d"
+        app:ccpDialog_backgroundColor="@color/a"
+        app:ccpDialog_textColor="@color/b"
+        app:ccpDialog_fastScroller_bubbleColor="@color/d"
+        app:ccpDialog_fastScroller_bubbleTextAppearance="@color/a"
+        app:ccpDialog_fastScroller_handleColor="@color/e"/>-->
+    <LinearLayout
+        android:id="@+id/lw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="bottom|center"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp">
+
+        <com.hbb20.CountryCodePicker
+        android:id="@+id/ccp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/editText"
+        android:layout_toStartOf="@+id/editText"
+        app:ccp_showFullName="false"
+            app:ccpDialog_keyboardAutoPopup="false"
+        app:ccp_showNameCode="false"
+        app:ccp_showPhoneCode="false"
+        app:ccp_contentColor="@color/b"
+        app:ccp_autoDetectCountry="true"
+        app:ccpDialog_searchEditTextTint="@color/d"
+        app:ccpDialog_backgroundColor="@color/a"
+        app:ccpDialog_textColor="@color/b"
+        app:ccpDialog_fastScroller_bubbleColor="@color/d"
+        app:ccpDialog_fastScroller_bubbleTextAppearance="@color/a"
+        app:ccpDialog_fastScroller_handleColor="@color/e"
+            app:ccp_defaultNameCode="US"
+            />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/phone"
+        android:inputType="phone"
+        android:maxLines="1"
+        android:hint="Phone number"
+        />
+    </LinearLayout>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/password"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:hint="Password"
+        android:drawableLeft="@drawable/lper"
+        android:layout_marginBottom="10dp"/>
+
+    <Button
+        android:layout_width="187dp"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:id="@+id/registerButton"
+        android:background="@drawable/buttonlog"
+        android:textColor="#fff"
+        android:layout_marginBottom="20dp"/>
+
+</LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="bottom|center"
+        android:layout_alignParentBottom="true">
+        <TextView
+            android:id="@+id/registerq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="bottom|center"
+            android:text="Already have an account? "
+            android:textSize="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true" />
+        <TextView
+            android:id="@+id/registerqq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="bottom|center"
+            android:text="Login"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="#fe1194bc"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/jj"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        app:srcCompat="@drawable/nlogo" />
+</RelativeLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@android:color/transparent">
+    <com.comix.overwatch.HiveProgressView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        app:hive_animDuration="4000"
+        app:hive_color="#ffffff"
+        app:hive_maxAlpha="255"
+        app:hive_rainbow="true"
+        app:hive_cornerRadius="30"
+        app:hive_shrink="true"
+        />
+    <TextView
+        android:id="@+id/tyo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome"
+        android:textColor="#fff"
+        android:textSize="16sp"/>
+</LinearLayout>

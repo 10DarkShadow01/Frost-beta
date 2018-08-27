@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wof">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tt"
+        android:layout_marginTop="5dp">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" "
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:id="@+id/tvvu"/>
+        </ScrollView>
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/tt"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="68dp"
+        app:srcCompat="@drawable/ropett"
+        android:layout_alignTop="@+id/jj"
+        android:layout_alignLeft="@+id/jj"
+        android:layout_alignStart="@+id/jj" />
+    <ImageView
+        android:id="@+id/jj"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="15dp"
+        app:srcCompat="@drawable/iconfrost"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alpha 0.0.2"
+        android:textColor="#fff"
+        android:layout_alignBottom="@+id/jj"
+        android:layout_toRightOf="@+id/tt"
+        android:layout_toEndOf="@+id/tt" />
+</RelativeLayout>

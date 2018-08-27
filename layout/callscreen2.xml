@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/blankcall">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:weightSum="5"
+              >
+
+    <LinearLayout
+        android:layout_marginTop="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:layout_weight="0"
+
+            >
+
+        <TextView
+                android:id="@+id/remoteUserr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:text=""
+                android:textColor="#fff"
+                android:textSize="28sp"/>
+
+        <TextView
+                android:id="@+id/callStater"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Ringing"
+                android:textColor="#d9f0f4"
+                android:textSize="16sp"
+                android:textAllCaps="true"
+                />
+
+        <TextView
+                android:id="@+id/callDurationr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="4dp"
+                android:text="00:00"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#e7f6f9"
+                android:textSize="16sp"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:padding="0dip"
+            android:layout_weight="5" android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/circleImageView"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="127dp"
+            android:src="@drawable/profileholder" />
+
+        <TextView
+            android:id="@+id/remoteUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/circleImageView"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="21dp"
+            android:text="Remote"
+            android:textColor="#53cbe9"
+            android:textSize="28sp" />
+
+        <TextView
+            android:id="@+id/callState"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/remoteVideo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="76dp"
+            android:text="Ringing"
+            android:textAllCaps="true"
+            android:textColor="#53cbe9"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/callDuration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/remoteUser"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="29dp"
+            android:text="00:00"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#40bdea"
+            android:textSize="16sp" />
+
+        <LinearLayout android:id="@+id/remoteVideo" android:layout_width="match_parent"
+                      android:layout_height="wrap_content" android:layout_alignParentLeft="true"
+                      android:layout_alignParentTop="true" android:orientation="horizontal"/>
+
+        <RelativeLayout android:id="@+id/localVideo" android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/ovll"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+        <!--<com.sababado.circularview.CircularView
+            android:id="@+id/localVideo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:centerBackgroundColor="#33b5e5"
+            app:centerDrawable="@drawable/penguin"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"/>-->
+        <RelativeLayout
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="8dp">
+
+            <!--<Button
+                android:id="@+id/hangupButton1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/callred"
+                android:paddingBottom="20dp"
+                android:paddingTop="20dp" />-->
+            <ImageView
+                android:id="@+id/hangupButton"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                app:srcCompat="@drawable/callred"
+                android:layout_centerInParent="true"
+                />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:id="@+id/bottomPanel"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0">
+       <!-- <Button
+                android:id="@+id/hangupButton"
+                android:paddingBottom="20dp"
+                android:paddingTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+            android:text="Hangup"
+            android:textColor="#fff"
+                android:background="@drawable/rbuttonlog"/>-->
+        <!--<com.varunest.sparkbutton.SparkButton
+            android:id="@+id/hangupButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:sparkbutton_activeImage="@drawable/we"
+            app:sparkbutton_inActiveImage="@drawable/dcallr"
+            app:sparkbutton_iconSize="60dp"
+            app:sparkbutton_primaryColor="@color/dpp"
+            app:sparkbutton_secondaryColor="@color/dss"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="11dp"
+            android:layout_marginEnd="11dp"
+             />-->
+        <ImageView
+            android:id="@+id/hangupButton1"
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:padding="10dp"
+            app:srcCompat="@drawable/callred"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="11dp"
+            android:layout_marginEnd="11dp" />
+
+    </RelativeLayout>
+
+</LinearLayout>
+</FrameLayout>

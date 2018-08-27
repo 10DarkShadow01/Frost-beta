@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:weightSum="5"
+    android:background="@drawable/aqw">
+
+    <LinearLayout
+        android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            >
+
+        <TextView
+                android:id="@+id/remoteUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="14dp"
+                android:text="Frost"
+                android:textColor="#e9eff5"
+                android:textSize="28sp"/>
+
+        <TextView
+                android:id="@+id/callState"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Incoming video call"
+                android:textColor="#d1d5d9"
+                android:textSize="16sp"
+                android:textAllCaps="true"
+                />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/uimg"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:src="@drawable/w2foxy"
+            android:padding="0dip"
+            android:layout_weight="3"
+            android:contentDescription="Call background">
+
+    </ImageView>
+
+    <RelativeLayout
+            android:id="@+id/bottomPanel"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+           <!-- <Button
+                    android:id="@+id/answerButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                android:text="Answer"
+                android:textColor="#fff"
+                    android:background="@drawable/gbuttonlog"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="13dp"
+                android:layout_marginStart="13dp" />-->
+        <ImageView
+            android:id="@+id/answerButton"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:padding="10dp"
+            app:srcCompat="@drawable/iccallg"
+            android:background="@drawable/whitecircle2"
+            android:layout_marginLeft="13dp"
+            android:layout_marginStart="13dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+       <!-- <com.varunest.sparkbutton.SparkButton
+            android:id="@+id/answerButton"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            app:sparkbutton_activeImage="@drawable/iccall"
+            app:sparkbutton_inActiveImage="@drawable/iccallg"
+            app:sparkbutton_iconSize="60dp"
+            app:sparkbutton_primaryColor="@color/cp"
+            app:sparkbutton_secondaryColor="@color/cs"
+            android:layout_marginLeft="13dp"
+            android:layout_marginStart="13dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />-->
+        <ImageView
+            android:id="@+id/declineButton"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:padding="10dp"
+            app:srcCompat="@drawable/icdcallr"
+            android:background="@drawable/whitecircle"
+            android:layout_marginRight="29dp"
+            android:layout_marginEnd="29dp"
+            android:layout_alignBottom="@+id/answerButton"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+           <!-- <Button
+                    android:id="@+id/declineButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                android:text="Decline"
+                android:textColor="#ffffff"
+                android:background="@drawable/rbuttonlog"
+                android:layout_alignBaseline="@+id/answerButton"
+                android:layout_alignBottom="@+id/answerButton"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="16dp"
+                android:layout_marginEnd="16dp" />-->
+       <!-- <com.varunest.sparkbutton.SparkButton
+            android:id="@+id/declineButton"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            app:sparkbutton_activeImage="@drawable/we"
+            app:sparkbutton_inActiveImage="@drawable/dcallr"
+            app:sparkbutton_iconSize="60dp"
+            app:sparkbutton_primaryColor="@color/dpp"
+            app:sparkbutton_secondaryColor="@color/dss"
+            android:layout_marginRight="11dp"
+            android:layout_marginEnd="11dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />-->
+
+    </RelativeLayout>
+
+</LinearLayout>
